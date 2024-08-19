@@ -24,24 +24,37 @@ body {
     color: white;
 }
 
+#viewport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 
+}
+
+#viewport > *{
+    max-width: 1000px;
+}
 
 .container-1{
     flex: 1;
     padding: 20px;
+    width: 80%;
 }   
 
-.container-2{
+.container-2 img{
     flex: 1;
     padding: 20px;
+    width: 100%;
 }
 
 .container-3, .container-4{
-    width: 45%;
+    width: 80%;
 }   
 
 .container-3 img, .container-4 img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -76,7 +89,7 @@ body {
 } 
 
 #try-five-free{
-    padding: 30px; 
+    padding: 25px 50px; 
     text-decoration: none; 
     border-radius: 50px; 
     font-weight: bold;
@@ -86,14 +99,20 @@ body {
 }
 
 .gradient-button {
-    padding: 10px 20px;
-    background: linear-gradient(45deg,#e38c30, #e76d2d);
-    color: white; 
-    border-radius: 25px; 
+    padding: 25px 50px;
+    background: linear-gradient(45deg, #e38c30, #e76d2d);
+    color: white;
+    border-radius: 50px;
     font-weight: bold;
     border: none;
     cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.2; /* Adjust this for vertical spacing between the lines */
 }
+   
+
 
 #h-3{
     font-family: Arial; 
@@ -117,11 +136,17 @@ body {
     color: white;
 }
    
-#p-1 {
+.p-1 {
     font-family: Arial;
     font-size: 28px;
     font-weight: 350;
     color:#c999fc;
+    opacity: 80%;
+    line-height: 140%;
+}
+
+.image-1 {
+    padding-top: 20vw;
 }
 
 .h-3 {
